@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { useRef, useState } from 'react'
-import { motion } from "framer-motion"
+import { easeIn, motion } from "framer-motion"
 import { IoMdClose } from 'react-icons/io'
 import { FiGithub } from 'react-icons/fi'
 import { RxVideo } from 'react-icons/rx'
@@ -74,10 +74,12 @@ const Navbar = () => {
                         </Link>
                     </ul>
 
-                    <a href="#" target='_blank'>
+                    <a href="/assest/Hasibul Hasan_Resume .pdf" target='_blank'>
                         <motion.button className='px-4 py-2 rounded-md text-textGreen text-[15px] border border-textGreen hover:bg-hoverColor duration-300' initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5 }}>Resume</motion.button>
+                            transition={{ delay: 0.5 }}>
+                                Resume
+                            </motion.button>
                     </a>
                 </div>
 
@@ -97,7 +99,7 @@ const Navbar = () => {
 
                             <motion.div initial={{ x: 20, opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
-                                transition={{ duration: 0.1 }}
+                                transition={{ duration: 0.2,delay:0.3,ease:easeIn }}
                                 className='w-[80%] h-full  bg-[#112240] flex flex-col items-center px-4 py-10 z-50 relative'
                             >
                                 <IoMdClose onClick={() => setShow(false)} className='text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4 duration-300' />
@@ -109,35 +111,35 @@ const Navbar = () => {
                                 <ul className='flex flex-col gap-7 text-[15px] mt-8'>
                                     <Link onClick={() => setShow(false)} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#home'><motion.li initial={{ y: -10, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.3 }}
+                                        transition={{ duration: 0.3,delay:0.4,ease:easeIn  }}
 
                                     >Home</motion.li>
                                     </Link>
 
                                     <Link onClick={() => setShow(false)} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#about'><motion.li initial={{ y: -10, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        transition={{ duration: 0.3, delay: 0.4,ease:easeIn }}
 
                                     ><span>01.</span> About</motion.li>
                                     </Link>
 
                                     <Link onClick={() => setShow(false)} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#experience'><motion.li initial={{ y: -10, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        transition={{ duration: 0.4, delay: 0.5,ease:easeIn }}
 
                                     ><span>02.</span> Experience</motion.li>
                                     </Link>
 
                                     <Link onClick={() => setShow(false)} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#project'><motion.li initial={{ y: -10, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        transition={{ duration: 0.5, delay: 0.6,ease:easeIn }}
 
                                     ><span>03.</span> Project</motion.li>
                                     </Link>
 
                                     <Link onClick={() => setShow(false)} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link ' href='#contact'><motion.li initial={{ y: -10, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
-                                        transition={{ duration: 0.3, delay: 0.1 }}
+                                        transition={{ duration: 0.6, delay: 0.7,ease:easeIn }}
 
                                     ><span>04.</span> Contact</motion.li>
                                     </Link>
@@ -145,9 +147,9 @@ const Navbar = () => {
 
 
                                 <a href="#" target='_blank'>
-                                    <motion.button className='mt-6 px-6 py-2 rounded-md text-textGreen text-[15px] border border-textGreen hover:bg-hoverColor duration-300' initial={{ opacity: 0 }}
+                                    <motion.button className='mt-6 px-8 py-2 rounded-md text-textGreen text-[15px] border border-textGreen hover:bg-hoverColor duration-300' initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
-                                        transition={{ delay: 0.5 }}>Resume</motion.button>
+                                        transition={{duration:0.7, delay: 0.7,ease:easeIn }}>Resume</motion.button>
                                 </a>
 
 
