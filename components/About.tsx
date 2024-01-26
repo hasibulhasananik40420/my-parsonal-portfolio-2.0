@@ -51,9 +51,14 @@ const About = () => {
             </div> <div className='flex items-center gap-2'>
               <span><AiOutlineThunderbolt className='text-textGreen' size={20} /></span>
               <span className='text-sm font-medium text-textDark font-titleFont'>Redux</span>
-            </div> <div className='flex items-center gap-2'>
+            </div> 
+            <div className='flex items-center gap-2'>
               <span><AiOutlineThunderbolt className='text-textGreen' size={20} /></span>
               <span className='text-sm font-medium text-textDark font-titleFont'>Firebase</span>
+            </div>
+             <div className='flex items-center gap-2'>
+              <span><AiOutlineThunderbolt className='text-textGreen' size={20} /></span>
+              <span className='text-sm font-medium text-textDark font-titleFont'>Next js</span>
             </div>
 
           </div>
