@@ -38,7 +38,8 @@ const Navbar = () => {
                 </motion.div>
                 <div className='hidden mdl:inline-flex items-center gap-7'>
                     <ul className='flex gap-7 text-[15px]'>
-                        <Link onClick={handleScroll} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#home'><motion.li initial={{ y: -10, opacity: 0 }}
+                        <Link onClick={handleScroll} className='flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link' href='#home'><motion.li
+                         initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.3 }}
 

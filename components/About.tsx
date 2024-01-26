@@ -63,7 +63,8 @@ const About = () => {
           
 
             <div className='w-full h-full '>
-              <img className='rounded-lg h-[400px] w-[400px] object-cover border-2 border-textGreen' src="https://i.ibb.co/KNvnsXG/black-background-with-focus-spot-light-1017-27230.png" alt="" />
+              
+              <img className='' src="https://i.ibb.co/dmSth4V/Anik-webiste.png" alt="" />
 
               {/* <div className='hidden lgl:inline-block absolute w-full h-full rounded-md top-0 left-0  duration-300'>
 

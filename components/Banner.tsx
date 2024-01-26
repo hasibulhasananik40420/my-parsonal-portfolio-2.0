@@ -18,6 +18,8 @@ const Banner = () => {
                 transition={{ duration: 0.5, delay: 0.8 }}>
                 {""}
                 I am a web developer with 2+ years of experience in React. I have a strong foundation in front-end & back-end development and am skilled in creating user-friendly and responsive web applications using React and its ecosystem {""}
+              
+              
                 <span className='inline-flex relative text-textGreen font-titleFont cursor-pointer h-7 overflow-x-hidden group '>Learn More
 
 
